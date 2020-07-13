@@ -27,10 +27,18 @@
               "src/favicon.ico",
               "src/assets"
             ],
-            "styles": [
-              "src/styles.scss"
+            "styles": [  
+              "./node_modules/aos/dist/aos.css", 
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css", 
+              "src/scss/_variables.scss",          
+              "src/scss/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.min.js",
+              "./node_modules/popper.js/dist/umd/popper.min.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "./node_modules/aos/dist/aos.js",   
+            ]           
           },
           "configurations": {
             "production": {
@@ -123,6 +131,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "kids-home"
+    }
+  },
+  "defaultProject": "kids-home",
+  "cli": {
+    "analytics": "78073f69-fac2-41cc-908b-2f45b8f617ae"
+  }
 }

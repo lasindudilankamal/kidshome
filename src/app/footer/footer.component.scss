@@ -1,0 +1,65 @@
+@import '../../scss/_variables.scss';
+
+/* footer css*/
+
+footer {
+    .full-footer-gap {
+        padding: 60px 0;
+        background-color: #1c2331;
+        .socail-btn {
+            background-color: transparent;
+            border: 1px solid $tcolor-green;
+            color: $tcolor-green;
+            display: inline-block;
+            position: relative;
+            margin: 0 2px 0 2px;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border-radius: 50%;
+            text-align: center;
+            width: 40px;
+            height: 40px;
+            font-size: 16px;
+            transition: all .3s ease-in-out .1s !important; 
+            i {
+                margin: 0;
+                line-height: 40px;
+                text-align: center;
+            }
+        }
+        .socail-btn:hover, .socail-btn:active, .socail-btn:focus {
+            background-color: $tcolor-green;
+            border: 1px solid $tcolor-green;
+            color: #fff !important;
+            transition: all .3s ease-in-out .1s !important;
+        }
+        .f-topic {
+            font-weight: 700;
+            font-style: normal;
+            font-family: 'Dosis', sans-serif;
+            font-size: 1.3rem;
+        }
+        .explore-link a {
+           color: #fff !important;
+           transition: all .3s ease-in-out .1s !important;
+        }
+        .explore-link a:hover, .explore-link a:active, .explore-link a:focus {
+            color: $tcolor-green !important;
+            transition: all .3s ease-in-out .1s !important;
+         }
+    }
+
+
+    .bottom-line {
+        padding: 15px 0 14px 0;
+        background-color: #161c27;
+      }
+      .bottom-line p, .bottom-line a , .bottom-line span {
+        color: #7f8789;
+        font-size: 0.7rem;
+      }
+}
+  
+
+
+

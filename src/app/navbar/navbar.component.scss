@@ -1,0 +1,51 @@
+@import '../../scss/_variables.scss';
+
+// Navbar css
+nav {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 4px;
+    .navbar-brand img {
+        width: 185px;
+    }
+    .navbar-nav .nav-item .nav-link {
+        color: #2e4a56;
+        font-weight: 600;
+        margin: 0 0.8rem;
+        transition: all ease-in .2s;
+    }
+    .navbar-nav .nav-item .nav-link:hover, nav .navbar-nav .nav-item .nav-link:active, nav .navbar-nav .nav-item .nav-link:focus{
+        color: $tcolor-pink;
+        transition: all ease-in .2s;
+    }
+    .contact-btn {
+        background-color: $bgcolor-pink;
+        border-radius: 50px;
+        color: #fff !important;
+        font-weight: 600;
+        padding: 8px 25px;
+        width: 155px;
+        text-align: center;
+        transition: all .3s ease-in-out .1s !important;
+      }
+      .contact-btn:hover, .contact-btn:active, .contact-btn:focus {
+        background-color: $bgcolor-purple;
+        transition: all .3s ease-in-out .1s !important;
+      }
+}
+  
+
+
+/* Small devices (mobile phones, 320px and up) */
+@media (max-width: 991px) { 
+    nav {
+        .navbar-brand img {
+            width: 170px;
+        }
+        .navbar-nav .nav-item .nav-link,nav .navbar-nav .nav-item .nav-link:hover,nav .navbar-nav .nav-item .nav-link:active,nav .navbar-nav .nav-item .nav-link:focus {
+            margin: 0;
+        }
+        .navbar-nav .nav-item .contact-btn, nav .navbar-nav .nav-item .contact-btn:hover, nav .navbar-nav .nav-item .contact-btn:active, nav .navbar-nav .nav-item .contact-btn:focus {
+            margin-left: 0 !important;
+            margin-top: 10px;
+        }
+    }
+}

@@ -1,0 +1,82 @@
+@import '_variables.scss';
+/*globle css*/
+body {
+    font-family: "Open Sans", sans-serif !important;
+    color: $tcolor-gray !important;
+    padding-top: 3.5rem !important;
+    font-size: 0.95rem !important;
+}
+body::-webkit-scrollbar { width: 8px; }
+body::-webkit-scrollbar-track { background-color: #757575; }
+body::-webkit-scrollbar-thumb { border-radius: 0px; -webkit-box-shadow: inset 0 0 6px $bgcolor-pink; background-color:$bgcolor-pink; }
+body::-webkit-scrollbar:horizontal { height: 1px;}
+
+a, a:hover {
+  text-decoration: unset !important;
+} 
+
+.t-color-gray {color: $bgcolor-gray;}
+.t-color-pink {color: $bgcolor-pink;}
+
+.bg-color-purple {background-color: $bgcolor-purple;}
+
+
+.main-topic .text {
+  font-family: 'Dosis', sans-serif;
+  font-weight: 700;
+}
+  .topic-underline {
+    background-color: $bgcolor-purple;
+    width: 140px;
+    height: 6px;
+    border-radius: 50px;
+    margin: 20px 0;
+}
+.topic-underline-white {
+  background-color: $bgcolor-white;
+  width: 140px;
+  height: 6px;
+  border-radius: 50px;
+  margin: 20px 0;
+}
+.main-gap {
+  padding: 60px 0;
+}
+.primary-btn {
+  background-color: $bgcolor-pink;
+  border-radius: 50px;
+  color: #fff !important;
+  font-weight: 600;
+  padding: 12px 70px;
+  text-align: center;
+  transition: all .3s ease-in-out .1s !important;
+}
+.primary-btn:hover, .primary-btn:active, .primary-btn:focus {
+  background-color: $bgcolor-purple;
+  transition: all .3s ease-in-out .1s !important;
+}
+.topup-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 50px;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  border: 0;
+  background-color: $bgcolor-pink;
+  transition: all .3s ease-in-out .1s !important;
+  i {
+    font-size: 2.5rem;
+    line-height: 2.2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+}
+.topup-btn:hover, .topup-btn:active, .topup-btn:focus {
+  transition: all .3s ease-in-out .1s !important;
+  background-color: $bgcolor-purple;
+  outline: none !important;
+}
